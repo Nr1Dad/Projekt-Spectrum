@@ -22,7 +22,7 @@ public class BulletScript : MonoBehaviour
     private void FixedUpdate(){
        
         //vector3..forward laver fejl med retningn på skud atm.
-        rb.AddForce(Vector3.forward, ForceMode.Impulse);
+        rb.AddRelativeForce(Vector3.forward * speed, ForceMode.Impulse);
 
     }
   
