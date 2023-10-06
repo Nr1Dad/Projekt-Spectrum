@@ -25,8 +25,7 @@ public class player2ShootTest : MonoBehaviour
             Shoot();
             firingTimer = firingRate;
         }
-        else
-        {
+        else{
 
             firingTimer -= Time.deltaTime;
         }
