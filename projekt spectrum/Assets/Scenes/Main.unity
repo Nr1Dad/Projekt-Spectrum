@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 746032188}
   m_Layer: 0
   m_Name: Astroide
-  m_TagString: Untagged
+  m_TagString: Astroide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -597,6 +597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1888474616543442171, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 3106324510021873532, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -669,6 +673,10 @@ PrefabInstance:
     - target: {fileID: 1888474616543442171, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_Name
       value: Wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888474616543442171, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3106324510021873532, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -773,6 +781,10 @@ PrefabInstance:
     - target: {fileID: 1888474616543442171, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_Name
       value: Wall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888474616543442171, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3106324510021873532, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1018,6 +1030,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1888474616543442171, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_Name
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888474616543442171, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
+      propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3106324510021873532, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
