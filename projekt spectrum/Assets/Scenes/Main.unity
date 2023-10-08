@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17412773, g: 0.2177468, b: 0.29994273, a: 1}
+  m_IndirectSpecularColor: {r: 0.17412771, g: 0.21774685, b: 0.2999427, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -276,7 +276,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 350
+  orthographic size: 316
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -301,7 +301,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.60876137, y: 0, z: 0, w: 0.7933534}
-  m_LocalPosition: {x: 0, y: 500, z: -120}
+  m_LocalPosition: {x: 1, y: 500, z: -120}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -348,7 +348,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4362763, g: 0.49300936, b: 0.7169812, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -551,11 +551,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1338.7108
+      value: 1700
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalPosition.y
@@ -563,7 +563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 390
+      value: 357
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalRotation.w
@@ -659,7 +659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1414.043
+      value: 1700
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalPosition.x
@@ -671,7 +671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -387.2
+      value: -351
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalRotation.w
@@ -859,7 +859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -633
+      value: -831
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1084,8 +1084,8 @@ Transform:
   m_GameObject: {fileID: 1823489276}
   serializedVersion: 2
   m_LocalRotation: {x: 0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.17, y: -10, z: -1.47}
-  m_LocalScale: {x: 39.960003, y: 39.960003, z: 39.960003}
+  m_LocalPosition: {x: 6, y: -10, z: 169}
+  m_LocalScale: {x: 45, y: 45, z: 45}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -1232,7 +1232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 633
+      value: 835
       objectReference: {fileID: 0}
     - target: {fileID: 1193681542371710600, guid: dead1ba3082a448a2a427e5f282ef612, type: 3}
       propertyPath: m_LocalPosition.y
