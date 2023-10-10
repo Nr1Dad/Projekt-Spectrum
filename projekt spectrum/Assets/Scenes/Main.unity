@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17412773, g: 0.2177468, b: 0.29994273, a: 1}
+  m_IndirectSpecularColor: {r: 0.17412771, g: 0.21774685, b: 0.2999427, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1335924308156598317, guid: 75f005531037f7441a6022c38dba8e57, type: 3}
   firingPoint: {fileID: 1365550069}
+  currentLaunchforce: 20
   firingRate: 0.3
 --- !u!114 &203617629
 MonoBehaviour:
@@ -348,8 +349,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.4362763, g: 0.49300936, b: 0.7169812, a: 1}
-  m_Intensity: 2
+  m_Color: {r: 0.21764861, g: 0.32226115, b: 0.6320754, a: 1}
+  m_Intensity: 1.35
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -492,8 +493,8 @@ Transform:
   m_GameObject: {fileID: 746032183}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.16299, y: 25, z: 0.86576}
-  m_LocalScale: {x: 129.20035, y: 88.64621, z: 220.72887}
+  m_LocalPosition: {x: -33, y: 25, z: 47}
+  m_LocalScale: {x: 220.868, y: 88.64621, z: 388.6594}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
