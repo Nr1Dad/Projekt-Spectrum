@@ -26,19 +26,13 @@ public class BulletScript : MonoBehaviour
 
     
         void Start(){
-
         rb = GetComponent<Rigidbody>();
+
+        rb.AddRelativeForce(Vector3.up * speed, ForceMode.Impulse);
         Destroy(gameObject, lifetime);
         
     }
     
-
-    private void FixedUpdate(){
-       
-        //vector3..forward laver fejl med retningn på skud atm.
-        rb.AddRelativeForce(Vector3.up * speed, ForceMode.Impulse);
-
-    }
   
 
 
