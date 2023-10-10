@@ -6,9 +6,9 @@ public class player1ShootTest : MonoBehaviour
 {
     [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private Transform firingPoint;
-
+    [SerializeField] private float currentLaunchforce = 20;
     float firingTimer;
-   
+    
 
     [SerializeField] private float firingRate = 0.5f;
 
@@ -34,8 +34,8 @@ public class player1ShootTest : MonoBehaviour
 
 
        Rigidbody shootInstance = Instantiate(bulletPrefab, firingPoint.position, firingPoint.rotation) as Rigidbody;
+       shootInstance.velocity = currentLaunchforce * firingPoint.up;
 
-      
     }
 
     /*private void Fire()
