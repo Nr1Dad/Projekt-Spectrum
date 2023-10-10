@@ -23,10 +23,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Inputs
-
-
-
         // Finds and saves the desired angular speed 
         float currentSpeed = rb.velocity.magnitude;
         float alphaAngularSpeed = Mathf.Clamp(currentSpeed / speedDefault, 0, 1); // current speed divided by speedDefault and clamped [0;1]
