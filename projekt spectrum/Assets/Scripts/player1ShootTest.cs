@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class player1ShootTest : MonoBehaviour
 {
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private Transform firingPoint;
 
     float firingTimer;
+   
 
     [SerializeField] private float firingRate = 0.5f;
 
@@ -30,7 +31,28 @@ public class player1ShootTest : MonoBehaviour
     }
 
     private void Shoot(){
-        Instantiate(bulletPrefab, firingPoint.position, firingPoint.rotation);
+
+
+       Rigidbody shootInstance = Instantiate(bulletPrefab, firingPoint.position, firingPoint.rotation) as Rigidbody;
+
+      
+    }
+
+    /*private void Fire()
+    {
+        // Instantiate and launch the shell.
+        m_Fired = true;
+
+        Rigidbody shellInstance = Instantiate(m_Shell, m_FireTransform.position, m_FireTransform.rotation) as Rigidbody;
+
+        shellInstance.velocity = m_CurrentLaunchForce * m_FireTransform.forward;
+
+        m_ShootingAudio.clip = m_FireClip;
+        m_ShootingAudio.Play();
+
+        m_CurrentLaunchForce = m_MinLaunchForce;
+
 
     }
+    */
 }

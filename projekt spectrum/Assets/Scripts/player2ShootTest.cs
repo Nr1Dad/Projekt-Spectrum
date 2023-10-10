@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class player2ShootTest : MonoBehaviour
 {
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private Transform firingPointLeft;
     [SerializeField] private Transform firingPointRight;
 
@@ -33,8 +33,8 @@ public class player2ShootTest : MonoBehaviour
 
     private void Shoot()
     {
-        Instantiate(bulletPrefab, firingPointLeft.position, firingPointLeft.rotation);
-        Instantiate(bulletPrefab, firingPointRight.position, firingPointRight.rotation);
+        Rigidbody shootInstanceLeft = Instantiate(bulletPrefab, firingPointLeft.position, firingPointLeft.rotation) as Rigidbody;
+        Rigidbody shootInstanceRight = Instantiate(bulletPrefab, firingPointRight.position, firingPointRight.rotation) as Rigidbody;
 
     }
 }
