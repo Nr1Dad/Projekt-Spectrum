@@ -39,21 +39,5 @@ public class player1ShootTest : MonoBehaviour
 
     }
 
-    /*private void Fire()
-    {
-        // Instantiate and launch the shell.
-        m_Fired = true;
-
-        Rigidbody shellInstance = Instantiate(m_Shell, m_FireTransform.position, m_FireTransform.rotation) as Rigidbody;
-
-        shellInstance.velocity = m_CurrentLaunchForce * m_FireTransform.forward;
-
-        m_ShootingAudio.clip = m_FireClip;
-        m_ShootingAudio.Play();
-
-        m_CurrentLaunchForce = m_MinLaunchForce;
-
-
-    }
-    */
+    
 }

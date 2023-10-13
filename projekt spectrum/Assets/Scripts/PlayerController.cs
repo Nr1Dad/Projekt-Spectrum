@@ -49,10 +49,10 @@ public class PlayerController : MonoBehaviour
         }
 
         // Add forces to move
-        moveInputValue = Input.GetAxis("Vertical"); // [-1;1] back/forward input
+        moveInputValue = Input.GetAxis("Vertical" + playernumber); // [-1;1] back/forward input
         rb.AddRelativeForce(Vector3.forward * moveInputValue * speedDefault);
 
-        angularInputValue = Input.GetAxis("Horizontal"); // [-1;1] left/right input
+        angularInputValue = Input.GetAxis("Horizontal" + playernumber); // [-1;1] left/right input
         rb.AddRelativeTorque(Vector3.up * angularInputValue * angularSpeed * driftCompensation);
     }
 }
