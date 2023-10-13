@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.17412773, g: 0.2177468, b: 0.29994273, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1335924308156598317, guid: 75f005531037f7441a6022c38dba8e57, type: 3}
   firingPoint: {fileID: 1365550069}
-  currentLaunchforce: 20
+  currentLaunchforce: 250
   firingRate: 0.3
 --- !u!114 &203617629
 MonoBehaviour:
@@ -706,6 +706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 4977543351004493683, guid: 35614d4c95c3f45438fb17a79ef8a73f, type: 3}
+      propertyPath: m_TagString
+      value: Player2
+      objectReference: {fileID: 0}
     - target: {fileID: 5645290594047274441, guid: 35614d4c95c3f45438fb17a79ef8a73f, type: 3}
       propertyPath: m_LocalScale.x
       value: 4.0717263
@@ -1057,6 +1061,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2468640972527530534, guid: 6cc686c6703558c408423db7f69fcd30, type: 3}
       propertyPath: m_Name
+      value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468640972527530534, guid: 6cc686c6703558c408423db7f69fcd30, type: 3}
+      propertyPath: m_TagString
       value: Player1
       objectReference: {fileID: 0}
     - target: {fileID: 2957052195780569244, guid: 6cc686c6703558c408423db7f69fcd30, type: 3}
