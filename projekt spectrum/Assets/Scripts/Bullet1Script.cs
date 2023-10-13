@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BulletScript : MonoBehaviour
+public class Bullet1Script : MonoBehaviour
 {
     public float speed = 10f;
     public float lifetime = 5f;
@@ -22,9 +22,11 @@ public class BulletScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (other.gameObject.CompareTag("player"))
-        {
-            //her
+        if (other.gameObject.CompareTag("Player2"))
+        { 
+            
+            Destroy(other.gameObject);
+            Destroy(gameObject);
         }
 
     }
