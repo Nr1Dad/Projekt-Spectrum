@@ -7,6 +7,7 @@ public class player2ShootTest : MonoBehaviour
     [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private Transform firingPointLeft;
     [SerializeField] private Transform firingPointRight;
+    [SerializeField] private float currentLaunchforce = 20;
 
     float firingTimer;
 
@@ -35,6 +36,9 @@ public class player2ShootTest : MonoBehaviour
     {
         Rigidbody shootInstanceLeft = Instantiate(bulletPrefab, firingPointLeft.position, firingPointLeft.rotation) as Rigidbody;
         Rigidbody shootInstanceRight = Instantiate(bulletPrefab, firingPointRight.position, firingPointRight.rotation) as Rigidbody;
+
+        shootInstanceLeft.velocity = currentLaunchforce * firingPointLeft.up;
+        shootInstanceRight.velocity = currentLaunchforce * firingPointRight.up;
 
     }
 }

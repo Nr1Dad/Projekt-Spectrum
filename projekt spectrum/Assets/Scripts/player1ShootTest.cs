@@ -7,6 +7,7 @@ public class player1ShootTest : MonoBehaviour
     [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private Transform firingPoint;
     [SerializeField] private float currentLaunchforce = 20;
+
     float firingTimer;
     
 
