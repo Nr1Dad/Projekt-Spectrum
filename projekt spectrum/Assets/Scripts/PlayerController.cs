@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public float angularSpeedDefault = 240;
     public float angularDampingDefault = 20;
     public float maxDriftSpeed = 0.8f;
+    public float t = 0.2f;
+    public float t2 = 1f;
+   
 
     Rigidbody rb;
     float moveInputValue;
@@ -25,8 +28,8 @@ public class PlayerController : MonoBehaviour
     {
         // Finds and saves the desired angular speed 
         float currentSpeed = rb.velocity.magnitude;
-        float alphaAngularSpeed = Mathf.Clamp(currentSpeed / speedDefault, 0, 1); // current speed divided by speedDefault and clamped [0;1]
-        float angularSpeed = Mathf.Lerp(angularSpeedDefault, angularDampingDefault, alphaAngularSpeed); // angularSpeed dependent on current speed
+        float alphaAngularSpeed  = Mathf.InverseLerp(t, t2, currentSpeed / speedDefault); // value-line stretched
+        float angularSpeed = Mathf.Lerp(angularSpeedDefault, angularDampingDefault, Mathf.Clamp(alphaAngularSpeed, 0, 1)); // angularSpeed dependent on current speed
 
         // Drift compensation to not loose controll, when turning
         float driftCompensation;
@@ -41,7 +44,7 @@ public class PlayerController : MonoBehaviour
             float alphaDrift = Mathf.Clamp(currentAngularSpeed / maxDriftSpeed, 0, 1);
             driftCompensation = Mathf.Lerp(1, 2, alphaDrift);
 
-            Debug.Log(driftCompensation);
+            //Debug.Log(driftCompensation);
         }
 
         // Add forces to move
@@ -50,5 +53,7 @@ public class PlayerController : MonoBehaviour
 
         angularInputValue = Input.GetAxis("Horizontal" + playernumber); // [-1;1] left/right input
         rb.AddRelativeTorque(Vector3.up * angularInputValue * angularSpeed * driftCompensation);
+
+        Debug.Log(rb.angularVelocity.magnitude);
     }
 }
