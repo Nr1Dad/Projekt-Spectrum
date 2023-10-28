@@ -43,8 +43,6 @@ public class PlayerController : MonoBehaviour
             float currentAngularSpeed = rb.angularVelocity.magnitude;
             float alphaDrift = Mathf.Clamp(currentAngularSpeed / maxDriftSpeed, 0, 1);
             driftCompensation = Mathf.Lerp(1, 2, alphaDrift);
-
-            //Debug.Log(driftCompensation);
         }
 
         // Add forces to move
