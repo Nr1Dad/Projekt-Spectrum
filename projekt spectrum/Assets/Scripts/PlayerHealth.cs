@@ -4,18 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class TankHealth : MonoBehaviour {
-    public float startingHealth = 100f;               // The amount of health each tank starts with.
-    public Slider slider;                             // The slider to represent how much health the tank currently has.
+    public float startingHealth = 100f;               // The amount of health each player starts with.
+    public Slider slider;                             // The slider to represent how much health the player currently has.
     public Image fillImage;                           // The image component of the slider.
     public Color fullHealthColor = Color.green;       // The color the health bar will be when on full health.
     public Color zeroHealthColor = Color.red;         // The color the health bar will be when on no health.
-    //public GameObject m_ExplosionPrefab;                // A prefab that will be instantiated in Awake, then used whenever the tank dies.
+    //public GameObject m_ExplosionPrefab;                // A prefab that will be instantiated in Awake, then used whenever the player dies.
 
 
-    //private AudioSource m_ExplosionAudio;               // The audio source to play when the tank explodes.
-    //private ParticleSystem m_ExplosionParticles;        // The particle system the will play when the tank is destroyed.
-    private float currentHealth;                      // How much health the tank currently has.
-    private bool dead;                                // Has the tank been reduced beyond zero health yet?
+    //private AudioSource m_ExplosionAudio;               // The audio source to play when the player explodes.
+    //private ParticleSystem m_ExplosionParticles;        // The particle system the will play when the player is eliminated.
+    private float currentHealth;                      // How much health the player currently has.
+    private bool dead;                                // Has the player been reduced beyond zero health yet?
 
 
     private void Awake() {

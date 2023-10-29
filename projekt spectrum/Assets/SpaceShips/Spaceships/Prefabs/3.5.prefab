@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -141,10 +141,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -273,8 +273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
-  slider: {fileID: 0}
-  fillImage: {fileID: 0}
+  slider: {fileID: 5470152770493006016}
+  fillImage: {fileID: 899931948239493298}
   fullHealthColor: {r: 0, g: 1, b: 0, a: 1}
   zeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &1785601242844605960
@@ -484,6 +484,7 @@ GameObject:
   - component: {fileID: 1247458698002826758}
   - component: {fileID: 2398180413318728646}
   - component: {fileID: 6116291770484067417}
+  - component: {fileID: 2542448954094218456}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -508,7 +509,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 17.22, y: 0.1}
+  m_AnchoredPosition: {x: 18, y: 0}
   m_SizeDelta: {x: 25, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1247458698002826758
@@ -574,6 +575,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2542448954094218456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2673309013904222019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c65a7f0d5a8d841a8aba7aca81c648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angle: {x: 90, y: 0, z: 0}
+  position: {x: 0, y: 0, z: -40}
 --- !u!1 &6022215912555541368
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +599,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8888601365037405999}
   - component: {fileID: 5470152770493006016}
-  - component: {fileID: 6814163376972321711}
   m_Layer: 5
   m_Name: HealthSlider
   m_TagString: Untagged
@@ -664,18 +678,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6814163376972321711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6022215912555541368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56c65a7f0d5a8d841a8aba7aca81c648, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8440749519139057322
 GameObject:
   m_ObjectHideFlags: 0
