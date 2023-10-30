@@ -25,7 +25,7 @@ public class Bullet2Script : MonoBehaviour
         if (other.gameObject.CompareTag("Player1"))
         {
 
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
             Destroy(gameObject);
         }
 
