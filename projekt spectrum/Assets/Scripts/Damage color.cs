@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Damagecolor : MonoBehaviour
@@ -23,17 +22,15 @@ public class Damagecolor : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        
 
-            //FEJL HER, har brug for at blivee looped.
-            if (other.gameObject.CompareTag("Bullet"))
-            {
-                for (int i = 0; i < 8; i++)
-                { 
-                shipMaterial.color = Color.Lerp(colorOff, colorOn, Mathf.PingPong(Time.time * colorChangeSpeed, 1)); 
-                }
-            }
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            shipMaterial.color = Color.Lerp(colorOff, colorOn, Mathf.PingPong(Time.time * colorChangeSpeed, 1));
+
+
+
+        }
     }
-    
+
 
 }
