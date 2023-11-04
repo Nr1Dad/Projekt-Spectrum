@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TankHealth : MonoBehaviour {
+public class PlayerHealth : MonoBehaviour {
     public float startingHealth = 100f;               // The amount of health each player starts with.
     public Slider slider;                             // The slider to represent how much health the player currently has.
     public Image fillImage;                           // The image component of the slider.
@@ -51,6 +51,7 @@ public class TankHealth : MonoBehaviour {
         if (currentHealth <= 0f && !dead) {
             OnDeath();
         }
+        Debug.Log(currentHealth);
     }
 
 
@@ -81,4 +82,5 @@ public class TankHealth : MonoBehaviour {
         // Turn the tank off.
         gameObject.SetActive(false);
     }
+
 }

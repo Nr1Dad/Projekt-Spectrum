@@ -52,6 +52,8 @@ public class PlayerController : MonoBehaviour
         angularInputValue = Input.GetAxis("Horizontal" + playernumber); // [-1;1] left/right input
         rb.AddRelativeTorque(Vector3.up * angularInputValue * angularSpeed * driftCompensation);
 
-        Debug.Log(rb.angularVelocity.magnitude);
+        //Debug.Log(rb.angularVelocity.magnitude);
+
     }
+    
 }
