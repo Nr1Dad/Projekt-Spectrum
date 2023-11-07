@@ -28,6 +28,11 @@ public class Asteroidcontroller : MonoBehaviour
         }
     }
 
+    private void spawn()
+    {
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
