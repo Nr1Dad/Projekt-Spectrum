@@ -151,6 +151,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   lifetime: 50
+  hitRadius1: 1
+  minimumDMG: 10
+  maximumDMG: 15
 --- !u!1 &3053444010301265303
 GameObject:
   m_ObjectHideFlags: 0

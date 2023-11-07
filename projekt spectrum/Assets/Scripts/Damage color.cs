@@ -24,6 +24,7 @@ public class Damagecolor : MonoBehaviour
         if (hit == true) {
             StartCoroutine(DMGIndicator(1f));
         }
+        
     }
 
     IEnumerator DMGIndicator(float duration)
