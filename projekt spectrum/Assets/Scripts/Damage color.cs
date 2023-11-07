@@ -26,6 +26,7 @@ public class Damagecolor : MonoBehaviour
         {
             StartCoroutine(DMGIndicator());
         }
+        
     }
 
 
@@ -34,9 +35,11 @@ public class Damagecolor : MonoBehaviour
         
         
             shipMaterial.color = Color.Lerp(colorOff, colorOn, Mathf.PingPong(Time.time * colorChangeSpeed, 1));
-            yield return new WaitForSeconds(colorChangeLength);
-        hit = false;
 
+            yield return new WaitForSeconds(colorChangeLength);
+            hit = false;
+            StopCoroutine(DMGIndicator());
+            
     }
 
 
