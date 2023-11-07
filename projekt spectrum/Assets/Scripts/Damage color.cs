@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Threading;
 using UnityEngine;
 
 public class Damagecolor : MonoBehaviour
-
 {
     Material shipMaterial;
 
@@ -12,9 +13,7 @@ public class Damagecolor : MonoBehaviour
     public float colorChangeSpeed = 2;
     public float colorChangeLength = 1;
     private bool hit = false;
-
-
-
+    
     private void Start()
     {
         shipMaterial = GetComponent<Renderer>().material;
@@ -22,26 +21,23 @@ public class Damagecolor : MonoBehaviour
 
     private void Update()
     {
-        if (hit==true)
-        {
-            StartCoroutine(DMGIndicator());
+        if (hit == true) {
+            StartCoroutine(DMGIndicator(1f));
         }
         
     }
 
-
-    IEnumerator DMGIndicator()
+    IEnumerator DMGIndicator(float duration)
     {
-        
-        
-            shipMaterial.color = Color.Lerp(colorOff, colorOn, Mathf.PingPong(Time.time * colorChangeSpeed, 1));
-
-            yield return new WaitForSeconds(colorChangeLength);
-            hit = false;
-            StopCoroutine(DMGIndicator());
-            
+        var end = Time.time + duration;
+        float start = Time.time;
+        hit = false;
+        while(Time.time < end) {
+            //shipMaterial.color = Color.Lerp(colorOff, colorOn, Mathf.Sin((Time.time-start)*6.28f*(1/duration)+1.57f)*0.5f+0.5f); //PingPong
+            shipMaterial.color = Color.Lerp(colorOff, colorOn, Mathf.Sin((Time.time - start) * 6.28f - 1.57f) * 0.5f + 0.5f);
+            yield return null; // Go again (while loop)
+        } 
     }
-
 
     private void OnCollisionEnter(Collision other)
     {
@@ -51,6 +47,4 @@ public class Damagecolor : MonoBehaviour
             hit = true;
         }
     }
-
-
 }
