@@ -10,8 +10,7 @@ public class Damagecolor : MonoBehaviour
 
     Color colorOff = Color.white;
     Color colorOn = Color.red;
-    public float colorChangeSpeed = 2;
-    public float colorChangeLength = 1;
+    public float duration = 1f;
     private bool hit = false;
     
     private void Start()
@@ -22,7 +21,7 @@ public class Damagecolor : MonoBehaviour
     private void Update()
     {
         if (hit == true) {
-            StartCoroutine(DMGIndicator(1f));
+            StartCoroutine(DMGIndicator(duration));
         }
         
     }
