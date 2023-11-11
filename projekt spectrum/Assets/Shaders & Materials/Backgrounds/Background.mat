@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Background
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: e9249c6843dd6a84cb084dee130ea74f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -62,6 +62,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
+    - _ColorEnd: 0.75
+    - _ColorStart: 0.25
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -79,5 +81,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.05967313, g: 0.042052336, b: 0.3301887, a: 1}
+    - _ColorA: {r: 0.02516669, g: 0.014380952, b: 0.15100001, a: 1}
+    - _ColorB: {r: 0.0086206915, g: 0.0034482747, b: 0.05, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
