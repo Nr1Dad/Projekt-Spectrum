@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6098622508992434413, guid: 6fd25d93383cc4629aae0a605c39e815, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f6dd589e08595d340b62df98d2f191a2, type: 2}
     - target: {fileID: 8651861749766694461, guid: 6fd25d93383cc4629aae0a605c39e815, type: 3}
       propertyPath: m_Name
       value: Asteroide(S) Variant

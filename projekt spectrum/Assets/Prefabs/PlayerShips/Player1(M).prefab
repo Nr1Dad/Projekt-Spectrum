@@ -2170,7 +2170,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 199
+  m_VersionIndex: 202
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2216,12 +2216,12 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 119bff6d0b0f04344be3d1666b4ea92e, type: 2}
-  - {fileID: 2100000, guid: 47679482ac88c4351839530b2723fdc3, type: 2}
-  - {fileID: 2100000, guid: c6c3a936c658541aaa1b00f2d3045bea, type: 2}
-  - {fileID: 2100000, guid: b0a24518dd07b4a5dacc8e5e7af53c49, type: 2}
-  - {fileID: 2100000, guid: 0ca5bc7e8eb46443d9370921194bd04b, type: 2}
-  - {fileID: 2100000, guid: 8810f1d5af3b14d05951186f84f1ece5, type: 2}
+  - {fileID: 2100000, guid: e854de9ba7a0c2644b83bc495977bcb4, type: 2}
+  - {fileID: 2100000, guid: 24cd6267c41e9f54d963c8a5384b8138, type: 2}
+  - {fileID: 2100000, guid: 4f5252d80039434468395eb4fb5f48c4, type: 2}
+  - {fileID: 2100000, guid: 68cf3480b18d9e2438946d105c6806df, type: 2}
+  - {fileID: 2100000, guid: 62b147d0d75034f489e86baf594eceda, type: 2}
+  - {fileID: 2100000, guid: 7f0af0b40aa18814d84bcaf827fbd93e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2365,8 +2365,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1335924308156598317, guid: 75f005531037f7441a6022c38dba8e57, type: 3}
   firingPoint: {fileID: 7462311820908453360}
   currentLaunchforce: 250
-  blasterAudio: {fileID: 0}
-  blasterFiring: {fileID: 0}
   firingRate: 0.4
 --- !u!1 &8990489049212001845
 GameObject:

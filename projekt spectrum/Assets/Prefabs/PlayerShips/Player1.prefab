@@ -97,7 +97,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d79a83adef48e0c41bf93a4d0491ac1d, type: 2}
+  - {fileID: 2100000, guid: 24cd6267c41e9f54d963c8a5384b8138, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -136,6 +136,8 @@ MonoBehaviour:
   angularSpeedDefault: 340
   angularDampingDefault: 40
   maxDriftSpeed: 1.5
+  t: 0.2
+  t2: 1
 --- !u!114 &3647750517873543886
 MonoBehaviour:
   m_ObjectHideFlags: 0
