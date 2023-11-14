@@ -43,30 +43,21 @@ Material:
     m_Floats:
     - _AngleOffset: 9
     - _CellDensity: 0.034
-    - _ColorEnd: 0.55
+    - _ColorEnd: 0
     - _ColorMid: 0
-    - _ColorScale: 0.002
-    - _ColorStart: 0.15
+    - _ColorStart: 0
     - _Control: 0.9
-    - _Float: 0.4
-    - _NoiseLerp_a: 0.43
-    - _NoiseMix: 0.04
-    - _NoiseScale: 0.002
-    - _NoiseScale2: 0.006
+    - _Float: 0.038
     - _QueueControl: 0
     - _QueueOffset: 0
     - _a: 0.02
-    - _a2InvLerp: 0.023
     - _aInvLerp: 0.45
-    - _aLerp: 0.435
+    - _aLerp: 0.45
     - _b: 0.095
-    - _b2InvLerp: 0.09
-    - _bInvLerp: 0.55
+    - _bInvLerp: 0.53
     m_Colors:
-    - _Color: {r: 0.010249997, g: 0.0051249997, b: 0.040999997, a: 1}
-    - _Color1: {r: 0.015244789, g: 0.0077440003, b: 0.06399998, a: 1}
-    - _Color2: {r: 0.0032307722, g: 0.001615384, b: 0.021, a: 1}
-    - _Color_1: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 0}
+    - _Color_1: {r: 0, g: 0, b: 0, a: 0}
     - _Color_2: {r: 0, g: 0, b: 0, a: 0}
     - _Vector2: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
