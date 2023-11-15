@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8528512596554359133}
   - component: {fileID: 8078540623109175707}
   m_Layer: 0
-  m_Name: Player2(Done)
+  m_Name: Player2(done)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2938,7 +2938,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 432
+  m_VersionIndex: 435
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
