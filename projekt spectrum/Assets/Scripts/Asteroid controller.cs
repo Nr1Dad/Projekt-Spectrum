@@ -7,6 +7,7 @@ public class Asteroidcontroller : MonoBehaviour
 
     Rigidbody rb;
     public float KnockbackStreangth;
+    public float AsteroidHealth;
 
 
     // Start is called before the first frame update
@@ -20,6 +21,15 @@ public class Asteroidcontroller : MonoBehaviour
         if (other.gameObject.CompareTag("Bullet"))   //detect if tag on collided object is "Bullet"
         {
             rb.AddForce(Vector3.up * KnockbackStreangth, ForceMode.Impulse);   //Add force equal depending on set knockback streangth. Is also affected by object mass.
+            if (AsteroidHealth <= 10)
+            {
+                Debug.Log("Hit");
+                AsteroidHealth -- ;
+            }
+            if (AsteroidHealth < 1)
+            {
+                Destroy(gameObject);
+            }
         }
 
         if ( other.gameObject.CompareTag("Player1") || other.gameObject.CompareTag("Player2"))   //detect if tag on collided object is either "Player1" or "Player2"
