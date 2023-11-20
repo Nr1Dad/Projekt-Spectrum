@@ -52,7 +52,7 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Strengh: 1
+    - _Strengh: 0
     m_Colors:
     - _Color: {r: 0.3873804, g: 0.67058825, b: 0.20784311, a: 0}
     - _emissive_color: {r: 0.24104226, g: 0.8584906, b: 0.20787342, a: 0}
