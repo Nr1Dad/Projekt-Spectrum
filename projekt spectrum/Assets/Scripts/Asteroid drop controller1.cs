@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Asteroidcontroller : MonoBehaviour
+public class Asteroiddropcontroller1: MonoBehaviour
 {
 
     Rigidbody rb;
     public float KnockbackStreangth;
     public float AsteroidHealth;
+
+    
+    public Rigidbody Pickup;
 
     public
 
@@ -32,10 +35,21 @@ public class Asteroidcontroller : MonoBehaviour
                 AsteroidHealth -- ;
             }
 
+            if (AsteroidHealth == 4)
+            {
+                Rigidbody dropInstance = Instantiate(Pickup) as Rigidbody;
+            }
+
+            if (AsteroidHealth == 3) 
+            {
+                Rigidbody dropInstance = Instantiate(Pickup) as Rigidbody;
+            }
+
             if (AsteroidHealth < 1)
             {
                 
                 Destroy(gameObject);
+                Rigidbody dropInstance = Instantiate(Pickup) as Rigidbody;
             }
         }
 
