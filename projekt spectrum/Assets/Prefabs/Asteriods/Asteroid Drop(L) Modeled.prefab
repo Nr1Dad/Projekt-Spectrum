@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 9045538125797704147}
   - component: {fileID: 5997413148733473273}
   - component: {fileID: 6281546466841091342}
+  - component: {fileID: -6106262576287394206}
   - component: {fileID: 566430631506557247}
-  - component: {fileID: 4191733933068709443}
   m_Layer: 0
   m_Name: Asteroid Drop(L) Modeled
   m_TagString: Astroide
@@ -8551,7 +8551,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3482
+  m_VersionIndex: 3476
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -8576,7 +8576,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c94d139de6eac540a79b36a7fcc18b9, type: 2}
+  - {fileID: 2100000, guid: c8aa42ccbf1e89440987cfd3a929fdeb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8752,6 +8752,19 @@ CapsuleCollider:
   m_Height: 1.680169
   m_Direction: 1
   m_Center: {x: -0.009024711, y: 0.4593911, z: 0.01957187}
+--- !u!114 &-6106262576287394206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3451799945954290070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f387c435eb2f4e05bef303c53766077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KnockbackStreangth: 0.01
 --- !u!114 &566430631506557247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8767,18 +8780,3 @@ MonoBehaviour:
   impactSounds: {fileID: 9045538125797704147}
   lowImpact: {fileID: 8300000, guid: 0957dd5e42abab141919b8118179dd58, type: 3}
   bigImpact: {fileID: 8300000, guid: 29f8781cd965a0142928d338f8778d81, type: 3}
---- !u!114 &4191733933068709443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3451799945954290070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12e7c7760addc9b45b8e7c45e127af76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KnockbackStreangth: 0.01
-  AsteroidHealth: 5
-  Pickup: {fileID: 8281867047358174702, guid: 9692e29546dc8d949b09936bb76606e8, type: 3}

@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 534514937465724529}
   - component: {fileID: 3867669303332783711}
   - component: {fileID: -8081625395133676541}
+  - component: {fileID: 7432772696472000406}
   - component: {fileID: -207489939378219228}
-  - component: {fileID: 1814238519521957278}
   m_Layer: 0
   m_Name: Asteroid Drop(S) Modeled
   m_TagString: Astroide
@@ -8551,7 +8551,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 7990
+  m_VersionIndex: 7984
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -8576,7 +8576,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c94d139de6eac540a79b36a7fcc18b9, type: 2}
+  - {fileID: 2100000, guid: c8aa42ccbf1e89440987cfd3a929fdeb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8752,6 +8752,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7432772696472000406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928024097999485375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f387c435eb2f4e05bef303c53766077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KnockbackStreangth: 0.01
 --- !u!114 &-207489939378219228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8767,18 +8780,3 @@ MonoBehaviour:
   impactSounds: {fileID: -8081625395133676541}
   lowImpact: {fileID: 8300000, guid: 0957dd5e42abab141919b8118179dd58, type: 3}
   bigImpact: {fileID: 8300000, guid: 29f8781cd965a0142928d338f8778d81, type: 3}
---- !u!114 &1814238519521957278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3928024097999485375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12e7c7760addc9b45b8e7c45e127af76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KnockbackStreangth: 0.01
-  AsteroidHealth: 1
-  Pickup: {fileID: 8281867047358174702, guid: 9692e29546dc8d949b09936bb76606e8, type: 3}

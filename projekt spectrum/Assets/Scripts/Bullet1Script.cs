@@ -11,8 +11,6 @@ public class Bullet1Script : MonoBehaviour
     Rigidbody rb;
 
 
-
-
     public float minimumDMG = 15;
     public float maximumDMG = 15;
 
@@ -52,6 +50,7 @@ public class Bullet1Script : MonoBehaviour
         }
 
 
+       
 
     }
 
@@ -73,6 +72,8 @@ public class Bullet1Script : MonoBehaviour
         Destroy(gameObject, lifetime);
         
     }
+    
+  
 
 
 }
