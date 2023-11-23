@@ -8551,7 +8551,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3488
+  m_VersionIndex: 3494
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -8619,6 +8619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KnockbackStreangth: 0.01
+  AsteroidHealth: 0
 --- !u!114 &3832415384074784569
 MonoBehaviour:
   m_ObjectHideFlags: 0

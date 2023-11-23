@@ -8,7 +8,9 @@ public class Bullet2Script : MonoBehaviour
     public float speed = 10f;
     public float lifetime = 5f;
     public float hitRadius1 = 20f;
+
     Rigidbody rb;
+
     public float minimumDMG = 15;
     public float maximumDMG = 15;
 
@@ -46,7 +48,6 @@ public class Bullet2Script : MonoBehaviour
             //Destroy(other.gameObject);
             Destroy(gameObject);
         }
-
     }
     private float CalculateDamage()
     {
